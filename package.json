@@ -1,0 +1,33 @@
+{
+    "name": "tt-package-demo",
+    "version": "1.0.0",
+    "description": "A demo package for Total Typescript",
+    "keywords": [
+        "demo",
+        "typescript"
+    ],
+    "homepage": "https://github.com/mattpocock/tt-package-demo",
+    "bugs": {
+        "url": "https://github.com/mattpocock/tt-package-demo/issues"
+    },
+    "author": "Matt Pocock",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/mattpocock/tt-package-demo.git"
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "ci": "bun run build",
+        "format": "prettier --write ."
+    },
+    "type": "module",
+    "main": "dist/index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "prettier": "^3.8.3",
+        "typescript": "^6.0.3"
+    }
+}
