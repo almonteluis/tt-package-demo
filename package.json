@@ -1,6 +1,6 @@
 {
     "name": "tt-package-demo",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "A demo package for Total Typescript",
     "keywords": [
         "demo",
@@ -25,7 +25,7 @@
         "check-format": "prettier --check .",
         "test": "vitest run",
         "dev": "vitest",
-        "local-release": "changesets version && changesets publish",
+        "local-release": "changeset version && changeset publish",
         "prepublishOnly": "bun run ci"
     },
     "type": "module",
