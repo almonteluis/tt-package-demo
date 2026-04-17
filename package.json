@@ -20,14 +20,18 @@
     ],
     "scripts": {
         "build": "tsc",
-        "ci": "bun run build",
-        "format": "prettier --write ."
+        "ci": "bun run check-format; bun run test; bun run build",
+        "format": "prettier --write .",
+        "check-format": "prettier --check .",
+        "test": "vitest run",
+        "dev": "vitest"
     },
     "type": "module",
     "main": "dist/index.js",
     "license": "MIT",
     "devDependencies": {
         "prettier": "^3.8.3",
-        "typescript": "^6.0.3"
+        "typescript": "^6.0.3",
+        "vitest": "^4.1.4"
     }
 }
